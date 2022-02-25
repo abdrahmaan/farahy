@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caveat:wght@500;600;700&family=Jost&family=Lemonada:wght@300&display=swap"
+        rel="stylesheet">
+        <!-- AOS Animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Makeup Artist Name</title>
+</head>
+<body>
+
+    <section>
+        <!-- <header>
+           <h3 class="text-warning" style="font-size: 40px;">Farahy.com</h3>
+          </header> -->
+        <div class="data-text">
+            <div class="shape"><img src="imgs/p_pic.jpg" alt=""></div>
+            <h3>Bassant Tarek</h3>
+            <h6>I hope you find your specialice makeup look with our brashes</h6>
+        </div>
+    </section>
+
+    <div class="portfolio" data-aos="fade-up">
+            <h3>Our Work</h3>
+            <h4 data-aos="fade-left" data-aos-duration="700">imagina as you need i think this in our intrest</h4>
+    </div>
+
+    <div class="container" style="height: fit-content;">
+        <div class="grid-area">
+           <div class="box one" data-aos="fade-right" data-aos-duration="800" style=" background-image: url('imgs/default2.jpg');">
+               
+              
+           </div> 
+           <div class="box two" data-aos="fade-left" data-aos-delay="600" data-aos-duration="800" style=" background-image: url('imgs/default3.jpg');">
+               
+          
+              
+           </div> 
+           <div class="box three" data-aos="fade-left" data-aos-duration="800" style="background-image: url('imgs/default4.jpg');">
+               
+              
+           </div> 
+           <div class="box four" data-aos="zoom-in" data-aos-duration="800" style="background-image: url('imgs/default5.jpg');">
+               
+               
+           </div> 
+           <div class="box five" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" style="background-image: url('imgs/default6.jpg');">
+               
+                
+              
+           </div> 
+           <div class="box six" data-aos="zoom-in" data-aos-duration="800" style=" background-image: url('imgs/default11.jpg');">
+               
+                  
+           </div> 
+           <div class="box seven" data-aos="fade-left" style=" background-image: url('imgs/default8.jpg');">
+               
+                  
+              
+           </div> 
+           <div class="box eight" data-aos="fade-right" style=" background-image: url('imgs/default9.jpg');">
+               
+              
+           </div> 
+           <div class="box nine" data-aos="flip-right" data-aos-duration="1000" style="background-image: url('imgs/default10.jpg');">
+               
+              
+           </div> 
+           <div class="box ten" data-aos="flip-right" data-aos-duration="1000" style=" background-image: url('imgs/default11.jpg');">
+               
+                   
+              
+           </div> 
+           <div class="box eleven" data-aos="fade-up" style="background-image: url('imgs/default11.jpg');">           
+            </div> 
+          
+            <div class="box text1" data-aos="flip-up">
+                    <h2 class="mb-lg-4 mb-2" style="font-size: 25px; font-family: 'Lemonada'; color: #FF8AAE;">ليه تحجزى معايا دلوقتى ؟ - </h2>
+                    <p style="line-height: 1.9; color: white; font-size: 17px; font-family: 'Cairo';">بكل سهولة تفاصيل يومك محدش عارف إهتماماته قدى ، كتير قبلك كانوا مكانك و يومهم بقى من جماله ميتوصفش وصورهم بتنطق بجمالها متتردديش فى إختيارك</p>
+                    <button class="btn w-50 mx-auto" style="z-index: 100;background-color: #fff89a ;font-weight: 600;font-family: 'Cairo';">إحجزى الأن</button>
+                </div>
+            <div class="box text2 text-center px-lg-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+                <h2 class="text-center my-lg-5 my-4" style="font-size: 25px;color: #ff8aae; font-family: 'Lemonada';">تفاصيل العرض - </h2>
+                <p class="me-2" style="line-height: 3; color: white; font-size: 17px; font-family: 'Cairo';text-align: end;">
+                عدد ساعات العمل : 4
+                <br>
+                التكلفة : 1300 جنية مصرى
+                </p>
+                <button onclick="console.log('Hello')" class="btn w-50 text-center mx-auto"
+                    style="z-index: 101;background-color: #fff89a;font-weight: 600;font-family: 'Cairo';">إحجزى الأن</button>
+            </div>
+ 
+        </div>
+    </div>
+<style>
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        cursor: default;
+    }
+    body{
+        font-family: "Caveat";
+        font-weight: 600;
+        background-color: #D82148;
+        background-image: url("imgs/body.jpg");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: center center;
+        position: relative;
+    }
+    body::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top:0;
+        position: absolute;
+        background-color: rgb(0 0 0 / 70%);
+        z-index: -1;
+    }
+
+    /* Header Style */
+    header{
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        background-color: rgba(161, 61, 61, 0.473);
+        top: 0;
+        z-index: 5;
+        display: grid;
+        place-items: center;
+    }
+
+    /* Section Top Style */
+    section{
+        position: relative;
+        min-height: 80vh;
+        background-image: url("imgs/default11.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom: 2px #FF8AAE solid;
+        box-shadow:  0px 12px 44px -25px black;
+        /* animation: backanim 5s ease-in-out alternate infinite; */
+        overflow: hidden;
+
+
+    }
+
+    section::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left :0;
+        width: 100%;
+        height: 100%;
+        background-color:rgb( 0 0 0 / 70%);
+        z-index: 1;
+
+    }
+
+    /* Data div-text Style */
+    
+    .data-text{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+
+
+    }
+    .data-text .shape{
+        width: 200px;
+        /* height: 80px; */
+        border-radius: 50px;
+
+        
+    }
+    .data-text .shape img{
+
+        max-width: 100%;
+        border-radius: 50%;
+        border:  3px #FF8AAE solid;
+    }
+    section .data-text h3{
+        font-size: 55px;
+        color: #FFF89A;
+        z-index: 100;
+        text-align: center;
+
+    }
+    section .data-text h6{
+        font-size: 35px;
+        color:#FF8AAE ;
+        z-index: 100;
+        text-align: center;
+
+    }
+    /* Start Portfolio */
+
+    .portfolio{
+        width: 100%;
+        height: 215px;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio h3 {
+        font-size: 37px;
+        font-weight: 400;
+        color: #ff8aae;
+        font-family: "Caveat";
+        margin-bottom: 19px;
+        position: relative;
+        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.514);
+        
+    }
+
+    .portfolio h4 {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: "Caveat";
+        color: white;
+        padding: 10px;
+        border: 2px white solid;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-top-right-radius: 25px;
+        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.514);
+    }
+
+    .portfolio h3::before ,
+    .portfolio h3::after{
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #fff89a ;  
+        border-radius: 50%;   
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    .portfolio h3::after{
+        right: -20px  !important    ;
+    }
+    .portfolio h3::before{
+        
+        left: -20px  !important    ;
+    }
+
+    /* Start Grid Style */
+
+    .container{
+        height: fit-content;
+        padding: 0 20px;
+    }
+
+    .grid-area{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(14,1fr);
+        height: 2010px;
+    }
+    .grid-area .box{
+        position: relative;
+        background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 100px;
+         border-radius: 25px;
+         border: 4px solid #FF8AAE;
+         border-top: 0;
+         border-right: 0;
+        box-shadow: 0px 10px 30px -20px black;
+        cursor: pointer;
+        transition: 10s;
+    }
+    
+ 
+    .grid-area .box:hover::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(0 0 0 / 20%);
+         border-radius: 25px;
+        z-index: 2;
+}
+
+   .grid-area .text1:hover::before,
+   .grid-area .text2:hover::before{
+        z-index: -1;
+    }
+
+@keyframes backanim {
+    100%{
+        transform: scale(1.9);
+    }
+}
+
+     .grid-area .one{
+         grid-column: 1 / span 4 ;
+         grid-row: 1 / span 4 ;
+     }
+     .grid-area .two{
+         grid-column: 5 / span 5 ;
+         grid-row: 1 / span 2 ;
+        }
+        .grid-area .three{
+            grid-column: 5 / span 5 ;
+            grid-row: 3 / span 2 ;
+        }
+     .grid-area .four{
+         grid-column: 1 / span 3 ;
+            grid-row: 5 / span 2 ;
+     }
+     .grid-area .five{
+         grid-column: 4 / span 3 ;
+            grid-row: 5 / span 2 ;
+     }
+     .grid-area .six{
+         grid-column: 7 / span 3 ;
+            grid-row: 5 / span 2 ;
+     }
+     .grid-area .seven{
+         grid-column: 5 / span 5 ;
+            grid-row: 7 / span 4 ;
+     }
+     .grid-area .text1{
+         grid-column: 1 / span 4;
+         grid-row: 7 / span 2 ;
+         text-align: end;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 0 30px;
+         /* background-color: violet; */
+
+     }
+     .grid-area .eight{
+          grid-column: 1 / span 4;
+         grid-row: 9 / span 2 ;
+     }
+     .grid-area .nine{
+         grid-column: 1 / span 3;
+         grid-row: 11 / span 2 ;
+
+     }
+     .grid-area .ten{
+         grid-column: 4 / span 3;
+         grid-row: 11 / span 2 ;
+     }
+     .grid-area .eleven{
+         grid-column: 1 / span 6;
+         grid-row: 13 / span 2 ;
+     }
+
+     .grid-area .text2{
+         grid-column: 7 / span 3;
+         grid-row: 11 / span 4 ;
+         /* background-color: red; */
+     }
+/* //////////////////// Media Query ////////////////// */
+
+@media (min-width:319px) and (max-width: 426px) {
+section .data-text .shape{
+    width: 170px;
+}
+   section .data-text h3 {
+    font-size: 40px;
+    }
+    section .data-text h6{
+        font-size: 23px;
+        width: 85%;
+        text-align: center;
+    }
+    
+    .portfolio h4{
+        max-width: 85%;
+        padding: 4px 0px;
+        text-align: center;
+    }
+     .text1{
+         display: flex;
+         flex-direction: column;
+     }
+     .grid-area .box.text1 h2{
+        font-size: 14px !important;
+    }
+   .grid-area .box.text1 p{
+        font-size: 10px !important;
+    }
+    .grid-area .box{
+        padding: 4px 4px !important;
+    }
+    .text1 button{
+        width: 45% !important;
+        padding: 4px;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .text2 h2{
+      font-size: 15px !important;
+    }
+     .text2 p{
+      font-size: 15px !important;
+      line-height: 1.5 !important;
+    }
+    .text2 button{
+         width: 80% !important;
+        padding: 5px 5px;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: center;
+    }
+}
+
+@media (min-width:426px) and (max-width: 576px){
+ section .data-text h6{
+        font-size: 33px;
+        width: 85%;
+    }
+
+     section .data-text h6{
+         text-align: center;
+     }
+
+    .text1{
+         display: flex;
+         flex-direction: column;
+     }
+     .grid-area .box.text1 h2{
+        font-size: 17px !important;
+    }
+   .grid-area .box.text1 p{
+        font-size: 13px !important;
+    }
+    .grid-area .box{
+        padding: 15px 4px !important;
+    }
+    .text1 button{
+        width: 45% !important;
+        text-align: center;
+        padding: 4px;
+        font-size: 10px;
+        white-space: nowrap
+    }
+     .text2 h2{
+      font-size: 20px !important;
+    }
+     .text2 p{
+      font-size: 15px !important;
+      line-height: 1.9 !important;
+    }
+    .text2 button{
+         width: 80% !important;
+        padding: 5px 5px;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width:578px) and (max-width: 992px){
+ section .data-text h6{
+        font-size: 33px;
+        width: 85%;
+    }
+    section .data-text h6{
+         text-align: center;
+     }
+
+    .text1{
+         display: flex;
+         flex-direction: column;
+     }
+     .grid-area .box.text1 h2{
+        font-size: 17px !important;
+    }
+   .grid-area .box.text1 p{
+        font-size: 13px !important;
+    }
+    .grid-area .box{
+        padding: 15px 4px !important;
+    }
+    .text1 button{
+        width: 45% !important;
+        text-align: center;
+        padding: 4px;
+        font-size: 10px;
+        white-space: nowrap
+    }
+    .text2 h2{
+      font-size: 21px !important;
+    }
+     .text2 p{
+      font-size: 15px !important;
+      line-height: 1.8 !important;
+    }
+    .text2 button{
+         width: 80% !important;
+        padding: 5px 5px;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+}
+    </style>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/bootstrap.bundle.js"></script>
+</body>
+</html>s
